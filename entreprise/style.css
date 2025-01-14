@@ -1,0 +1,347 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body and font settings */
+body {
+    font-family: Arial, sans-serif;
+}
+
+/* Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: white;
+    padding: 10px 20px;
+    z-index: 1000;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar-links {
+    display: flex;
+}
+
+.navbar-links a {
+    padding: 10px 20px;
+    text-decoration: none;
+    color: #333;
+}
+
+.navbar-toggle .toggle-btn {
+    display: none;
+    font-size: 30px;
+}
+
+/* Sidebar */
+.sidebar {
+    position: fixed;
+    left: -250px;
+    top: 0;
+    width: 250px;
+    height: 100%;
+    background-color: black;
+    transition: left 0.3s ease;
+    padding-top: 60px;
+}
+
+.sidebar.active {
+    left: 0;
+}
+
+.sidebar a {
+    padding: 20px;
+    text-decoration: none;
+    color: white;
+    display: block;
+}
+
+.close-btn {
+    font-size: 36px;
+    color: white;
+    padding: 10px;
+    text-align: right;
+}
+
+/* Header */
+.header {
+    height: 100vh;
+    background-image: url('images/laptop.jpg');
+    background-size: cover;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+}
+
+.header-content h1 {
+    font-size: 50px;
+    justify-content: left;
+}
+
+.cta-button {
+    padding: 15px 30px;
+    background-color: #333;
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    margin-top: 20px;
+    border-radius: 5px;
+}
+
+.cta-button:hover {
+    background-color: #555;
+}
+/* Statistics Section */
+.statistics-section {
+    display: flex;
+    justify-content: space-around;
+    padding: 60px 20px;
+    background-color: #f4f4f4;
+}
+
+.stat {
+    text-align: center;
+}
+
+.stat i {
+    font-size: 50px;
+    margin-bottom: 10px;
+}
+
+.stat-value {
+    font-size: 36px;
+    font-weight: bold;
+}
+
+.stat-description {
+    font-size: 18px;
+    color: gray;
+}
+
+
+/* Section */
+.section {
+    padding: 80px 20px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.section-subtitle {
+    font-size: 18px;
+    color: gray;
+}
+
+.features {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.feature {
+    width: 22%;
+    text-align: center;
+}
+
+.feature-icon {
+    font-size: 50px;
+    margin-bottom: 20px;
+}
+
+/* Team */
+.team {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 40px;
+}
+
+.team-member {
+    width: 22%;
+    text-align: center;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+.team-img {
+    width: 100%;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.team-contact-btn {
+    background-color: #333;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.team-contact-btn:hover {
+    background-color: #555;
+}
+
+/* Work Gallery */
+.work-gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.work-item {
+    width: 48%;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+.work-item:hover {
+    opacity: 0.8;
+}
+/* Pricing Section */
+.pricing-plans {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 20px;
+}
+
+.pricing-plan {
+    background-color: #f9f9f9;
+    padding: 40px;
+    text-align: center;
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.pricing-plan h4 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.price {
+    font-size: 30px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.plan-description {
+    font-size: 16px;
+    color: gray;
+    margin-bottom: 20px;
+}
+
+.pricing-plan .cta-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+.pricing-plan .cta-button:hover {
+    background-color: #555;
+}
+
+/* Contact Form */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form .submit-btn {
+    background-color: #333;
+    color: white;
+    padding: 12px;
+    border: none;
+    cursor: pointer;
+}
+
+.contact-form .submit-btn:hover {
+    background-color: #555;
+}
+
+/* Footer */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+.to-top-btn {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+.social-icons i {
+    color: white;
+    margin: 0 10px;
+    font-size: 24px;
+}
+
+.social-icons i:hover {
+    opacity: 0.7;
+}
+
+/* Media Queries */
+@media screen and (max-width: 768px) {
+    .navbar-links {
+        display: none;
+    }
+    
+    .navbar-toggle .toggle-btn {
+        display: block;
+    }
+
+    .features {
+        flex-direction: column;
+    }
+
+    .feature {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+    
+    .team {
+        flex-direction: column;
+    }
+
+    .team-member {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+}
